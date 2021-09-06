@@ -9,12 +9,12 @@ namespace Self_StudyNavigator
     {
         string[] daysOfTheWeek = new string[] {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
         
-        public static void ReturnFiveElements()
+        public static void ReturnFiveElementsDaysOfTheWeekArray()
         {
         Console.WriteLine(daysOfTheWeek[4]);
         }
         
-        public static void ReturnLengthArray()
+        public static void ReturnLengthArrayDaysOfTheWeekArray()
         {
         Console.WriteLine(daysOfTheWeek.length);
         }
