@@ -21,8 +21,12 @@ namespace Self_StudyNavigator
 
             //Start Task 4
             //Task4.Task2(1, 2, 3, 4);
-                        
             //End Task 4
+
+            //Start Task 5
+            Task5.PrintIsMultiple(2);
+            
+            //End Task 5
         }
     }
 }
