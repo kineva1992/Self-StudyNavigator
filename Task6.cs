@@ -11,7 +11,7 @@ namespace Self_StudyNavigator
         
         public static void ReturnFiveElements()
         {
-        Console.WriteLine(daysOfTheWeek[5]);
+        Console.WriteLine(daysOfTheWeek[4]);
         }
         
         public static void ReturnLengthArray()
