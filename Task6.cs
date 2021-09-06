@@ -16,7 +16,7 @@ namespace Self_StudyNavigator
         
         public static void ReturnLengthArray()
         {
-        Console.WriteLine();
+        Console.WriteLine(daysOfTheWeek.length);
         }
     
     }
