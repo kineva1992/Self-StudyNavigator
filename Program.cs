@@ -40,8 +40,6 @@ namespace Self_StudyNavigator
             //End task 6 
 
             Task7 task7 = new Task7();
-
-            task7.PrintNumbers();
         }
     }
 }
