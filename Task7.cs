@@ -86,5 +86,33 @@ namespace Self_StudyNavigator
                 }
             }
         }
+
+        /*
+        Дан массив:
+        int[] numbers = {-4, 3, 2, -1, 0, 1, 2, 3, 4
+        };
+        Напишите код, в котором:
+        1. Получите длину массива используя свойство Length.
+        2. Переберите массив с использованием цикла while до
+        нахождения элемента со значением 0. Дальнейший
+        перебор прервите используя оператор break.
+        3. Все положительные числа, найденные в ходе
+        перебора, выводите в консоль.
+         */
+
+        public void PrintNumbers()
+        {
+            int[] numbers = {-4, 3, 2, -1, 0, 1, 2, 3, 4};
+            int count = 0;
+
+            while (count < numbers.Length)
+            {
+                if (numbers[count] == 0 || numbers[count] >= 0)
+                { 
+                    Console.WriteLine(numbers[count]);
+                }
+                count++;
+            }
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace Self_StudyNavigator
 
             Task7 task7 = new Task7();
 
-            task7.PrintDaysOfTheWeek2();
+            task7.PrintNumbers();
         }
     }
 }
