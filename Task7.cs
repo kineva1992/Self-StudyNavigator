@@ -25,7 +25,7 @@ namespace Self_StudyNavigator
             } 
         }
         
-        Задача 2. Напишите программу, которая будет «спрашивать» правильный пароль, до тех пор, пока он не будет введен. Правильный пароль пусть будет «root».
+       // Задача 2. Напишите программу, которая будет «спрашивать» правильный пароль, до тех пор, пока он не будет введен. Правильный пароль пусть будет «root».
             
         public static void PrintRoot(string inputName)
         {
@@ -48,7 +48,7 @@ namespace Self_StudyNavigator
         int[] arr1 = new int[10];
         int[] arr2 = new int[10];
         
-        public static int[] ReturnThreeArray()
+        public void ReturnThreeArray()
         {
                 int[] arr3 = new int[10];
             for(int i = 0; i < arr1.Length; i++)
@@ -77,10 +77,13 @@ namespace Self_StudyNavigator
          public void PrintDaysOfTheWeek2()
         {
             string[] daysOfTheWeek = new string[] {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
-            foreach(var days in daysOfTheWeek)
+            for (int i = 0; i < daysOfTheWeek.Length; i++)
             {
-                if(Convert.ToInt32(days) % 2 == 0)
-                    Console.WriteLine(days);
+                if (i % 2 == 0) 
+                { 
+                    Console.WriteLine(daysOfTheWeek[i]);
+                    continue;
+                }
             }
         }
     }

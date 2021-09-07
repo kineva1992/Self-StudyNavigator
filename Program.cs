@@ -39,7 +39,9 @@ namespace Self_StudyNavigator
             //Console.WriteLine(Seasons.IndexOf("Summer"));
             //End task 6 
 
-            
+            Task7 task7 = new Task7();
+
+            task7.PrintDaysOfTheWeek2();
         }
     }
 }
