@@ -50,13 +50,37 @@ namespace Self_StudyNavigator
         
         public static int[] ReturnThreeArray()
         {
-        int[] arr3 = new int[10];
+                int[] arr3 = new int[10];
             for(int i = 0; i < arr1.Length; i++)
             {
-            arr1[i] = i + 10;
-            arr2[i] = i + 5;
-            arr3[i] = arr1[i] + arr2[i];
-                Console.WriteLine(arr3[i]);
+                arr1[i] = i + 10;
+                arr2[i] = i + 5;
+                arr3[i] = arr1[i] + arr2[i];
+                    Console.WriteLine(arr3[i]);
+            }
+        }
+        
+        /*Создайте одномерный массив, содержащий
+        наименования 7 дней недели. Переберите созданный
+        массив с помощью цикла for, выводя значения элементов
+        в консоль.*/
+        string[] daysOfTheWeek = new string[] {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
+        public void PrintDaysOfTheWeek()
+        {
+            string[] daysOfTheWeek = new string[] {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
+            foreach(var days in daysOfTheWeek)
+            {
+            Console.WriteLine(days);
+            }
+        }
+        
+         public void PrintDaysOfTheWeek2()
+        {
+            string[] daysOfTheWeek = new string[] {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
+            foreach(var days in daysOfTheWeek)
+            {
+                if(Convert.ToInt32(days) % 2 == 0)
+                    Console.WriteLine(days);
             }
         }
     }
