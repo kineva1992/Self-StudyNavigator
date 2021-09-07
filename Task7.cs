@@ -47,11 +47,17 @@ namespace Self_StudyNavigator
         
         int[] arr1 = new int[10];
         int[] arr2 = new int[10];
-        int[] arr3 = new int[10];
+        
         public static int[] ReturnThreeArray()
         {
         int[] arr3 = new int[10];
-            for(int i = 0; int )
+            for(int i = 0; i < arr1.Length; i++)
+            {
+            arr1[i] = i + 10;
+            arr2[i] = i + 5;
+            arr3[i] = arr1[i] + arr2[i];
+                Console.WriteLine(arr3[i]);
+            }
         }
     }
 }
