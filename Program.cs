@@ -39,7 +39,17 @@ namespace Self_StudyNavigator
             //Console.WriteLine(Seasons.IndexOf("Summer"));
             //End task 6 
 
-            Task7 task7 = new Task7();
+            //Start task8 
+
+            Task8 task8 = new Task8();
+            List<int> ListInts = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int maxValue;
+            int minValue;
+            task8.MaxAndMinValue(ListInts,out maxValue,out minValue);
+            Console.WriteLine(maxValue);
+            Console.WriteLine(minValue);
+
+            //End task8 
         }
     }
 }
