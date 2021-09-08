@@ -41,15 +41,21 @@ namespace Self_StudyNavigator
 
             //Start task8 
 
-            Task8 task8 = new Task8();
-            List<int> ListInts = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            int maxValue;
-            int minValue;
-            task8.MaxAndMinValue(ListInts,out maxValue,out minValue);
-            Console.WriteLine(maxValue);
-            Console.WriteLine(minValue);
+            //Task8 task8 = new Task8();
+            //List<int> ListInts = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //int maxValue;
+            //int minValue;
+            //task8.MaxAndMinValue(ListInts,out maxValue,out minValue);
+            //Console.WriteLine(maxValue);
+            //Console.WriteLine(minValue);
 
             //End task8 
+            //Start task9
+            Car car = new Car();
+            car.Name = "Honda";
+            Console.WriteLine(car.Name);
+            //End task9
+            
         }
     }
 }
