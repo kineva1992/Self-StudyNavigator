@@ -11,16 +11,15 @@ namespace Self_StudyNavigator
         Задача 1. Напишите функцию, которая будет менять в массиве целых чисел все элементы, которые равны указанному значению (аргумент) на противоположное значение по знаку. 
         Например, все элементы массива которые равны 5, будут меняться на -5.
         */
-        public static int Sign(int ar, int arg = 5)
+        public static void Sign(ref int[] ar, int el)
         {
-            int arr;
-            if(ar == arg)
+            for (int i = 0; i < ar.Length; i++)
             {
-                arr = ar * -1;
-                return arr;
+                if (ar[i] == el && ar[i] > 0)
+                    ar[i] = -ar[i];
+                else if (ar[i] == el && ar[i] < 0)
+                    ar[i] = (int)((uint)ar[i]);
             }
-            else
-                return ar;
         }
         //Задача 2. Напишите функцию, которая будет находить минимальное число из трех.
         public int ReturnMedian(int a, int b, int c)
