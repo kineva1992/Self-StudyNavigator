@@ -54,8 +54,38 @@ else
   
 
 }
+  public class OverideFirstName
+  {
+    /*
+    Домашнее задание
+    Имеется список имен. Создайте метод, который будет выводить на экран эти имена через запятую. 
+    Перегрузите этот метод так, чтобы можно было изменять разделитель – вместо запятых между именами любой символ, переданный параметром.
+    */
+    
+    List<string> firstName = List<string>{"Андрей","Коля","Дима"};
+    
+    public void PrintList(List<string> listName)
+    {
+      for(int i = 0; i < listName.Length; i++)
+      {
+        Console.WriteLine(listName[i]);
+      }
+    }
+    
+    public void PrintList(List<string> listName, char symbol)
+    {
+      for(int i = 0 ; i < listName.Length; i++)
+      {
+        Console.WriteLine(listName[i] + symbol);
+      }
+    }
+  }
   class Task10
   {
+    
   
+    
+    
+    
   }
 }
