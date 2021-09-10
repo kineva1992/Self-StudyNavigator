@@ -51,11 +51,15 @@ namespace Self_StudyNavigator
 
             //End task8 
             //Start task9
-            Car car = new Car();
-            car.Name = "Honda";
-            Console.WriteLine(car.Name);
+            //Car car = new Car();
+            //car.Name = "Honda";
+            //Console.WriteLine(car.Name);
             //End task9
-            
+
+            //Start task11
+            Notification notification = new Notification("them",2);
+            //End task11
+
         }
     }
 }
