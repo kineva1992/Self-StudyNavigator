@@ -26,7 +26,7 @@ public int NextClanel()
   return ThatChannel;
 }
 
-public int Previous()
+public void Previous()
 {
   ThatChannel--;
   if(ThatChannel >= 0)
@@ -62,11 +62,11 @@ else
     Перегрузите этот метод так, чтобы можно было изменять разделитель – вместо запятых между именами любой символ, переданный параметром.
     */
     
-    List<string> firstName = List<string>{"Андрей","Коля","Дима"};
+    List<string> firstName = new List<string> {"Андрей","Коля", "Дима"};
     
     public void PrintList(List<string> listName)
     {
-      for(int i = 0; i < listName.Length; i++)
+      for(int i = 0; i < listName.Count; i++)
       {
         Console.WriteLine(listName[i]);
       }
@@ -74,7 +74,7 @@ else
     
     public void PrintList(List<string> listName, char symbol)
     {
-      for(int i = 0 ; i < listName.Length; i++)
+      for(int i = 0 ; i < listName.Count; i++)
       {
         Console.WriteLine(listName[i] + symbol);
       }
