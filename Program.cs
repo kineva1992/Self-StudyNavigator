@@ -90,7 +90,10 @@ namespace Self_StudyNavigator
             //                      // указывают на один объект в хипе
             //Console.WriteLine(state1.country.x); // 8
             //Console.WriteLine(state2.country.x); // 8
-
+            Persons persons = new Persons { Name = "Tom" };
+            Console.WriteLine(persons.Name);
+            persons = new Persons { Name = "Peeter" };
+            Console.WriteLine(persons.Name);
 
             //Edn task13
 
