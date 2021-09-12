@@ -97,6 +97,9 @@ namespace Self_StudyNavigator
 
             //Edn task13
 
+            int? a = null;
+            int b = (int)a;
+
         }
 
         static void ChangePerson(Persons persons)
