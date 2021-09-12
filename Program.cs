@@ -57,7 +57,7 @@ namespace Self_StudyNavigator
             //End task9
 
             //Start task11
-            Notification notification = new Notification("them",2);
+            //Notification notification = new Notification("them",2);
             //End task11
 
             //Start task13
@@ -90,15 +90,52 @@ namespace Self_StudyNavigator
             //                      // указывают на один объект в хипе
             //Console.WriteLine(state1.country.x); // 8
             //Console.WriteLine(state2.country.x); // 8
-            Persons persons = new Persons { Name = "Tom" };
-            Console.WriteLine(persons.Name);
-            persons = new Persons { Name = "Peeter" };
-            Console.WriteLine(persons.Name);
+            //Persons persons = new Persons { Name = "Tom" };
+            //Console.WriteLine(persons.Name);
+            //persons = new Persons { Name = "Peeter" };
+            //Console.WriteLine(persons.Name);
 
             //Edn task13
 
-            int? a = null;
-            int b = (int)a;
+            //int? a = null;
+            //int b = (int)a;
+
+            //Truck truck = new Truck(1.1m);
+            //Console.WriteLine($"Truck with capacity {truck.Capacity}");
+            //Console.ReadKey();
+
+            List<GeometryFigure> FigureList = new List<GeometryFigure>();
+            FigureList.Add(new Triangle());
+            FigureList.Add(new Triangle());
+            FigureList.Add(new Triangle());
+            FigureList.Add(new Triangle());
+            FigureList.Add(new Cirkle());
+            FigureList.Add(new Cirkle());
+            FigureList.Add(new Cirkle());
+            FigureList.Add(new Cirkle());
+            FigureList.Add(new Cirkle());
+            for (int i = 0; i < FigureList.Count; i++) 
+            {
+                
+                int countTriangle = 1;
+                int coutCirkle = 1;
+                if (FigureList[i] is Triangle)
+                {
+                    countTriangle += i;
+                    Console.WriteLine("Trangle входит в соста базового класса {0} раз", countTriangle);
+                }
+                else 
+                {
+                    coutCirkle += i;
+                    Console.WriteLine("Cirkle входит в соста базового класса {0} раз", coutCirkle);
+                }
+                
+                
+            }
+
+            GeometryFigure geometryFigure = new Cirkle();
+            Console.WriteLine(((Cirkle)geometryFigure).Get_Radius = 15);
+
 
         }
 
