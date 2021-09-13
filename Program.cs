@@ -133,8 +133,9 @@ namespace Self_StudyNavigator
                 
             }
 
-            GeometryFigure geometryFigure = new Cirkle();
-            Console.WriteLine(((Cirkle)geometryFigure).Get_Radius = 15);
+
+            Manager task16 = new Manager();
+            Console.WriteLine(task16.GetSumOfTheMount(100, 168, 0.7));
 
 
         }
