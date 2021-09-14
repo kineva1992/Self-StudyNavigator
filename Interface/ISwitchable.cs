@@ -12,7 +12,9 @@ namespace Self_StudyNavigator
   */
   ISwitchable
   {
+    //Включение
     void SwitchOn();
-    void SwitchOff()'
+    //Выключение
+    void SwitchOff();
   }
 }
