@@ -13,6 +13,57 @@ namespace Self_StudyNavigator
     национальности (Привет, Привіт, Hi...).
 
      */
+    
+    abstract class Man
+    {
+         string Name{get; set;}
+         string Hello{get; set;}
+        
+         abstract void SayHello();
+    }
+    
+    class Russian : Man
+    {
+        Russian(string name, string hello)
+        {
+            Name = "Russian";
+            Hello = hello;
+        }
+        
+         override void SayHello()
+        {
+            Console.WriteLine("One {0} said {1} ", Name, Hello);
+        }
+    }
+    
+    class Ukrainian : Man
+    {
+        Ukrainian(string name, string hello)
+        {
+            Name = "Ukrainian";
+            Hello = hello;
+        }
+        
+        override void SayHello()
+        {
+            Console.WriteLine("One {0} said {1}"Name, Hello);
+        }
+    }
+    
+    class American : Man
+    {
+        Ukrainian(string name, string hello)
+        {
+            Name = "Ukrainian";
+            Hello = hello;
+        }
+        
+        override void SayHello()
+        {
+            Console.WriteLine("One {0} said {1}", Name, Hello);
+        }
+    }
+    
 
     class Task17
     {
