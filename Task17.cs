@@ -69,7 +69,7 @@ namespace Self_StudyNavigator
     {
     }
     
-    class TvSet : ISwitchable 
+    class TvSwitch : ISwitchable 
     {
         //Включение
         void SwitchOn()
