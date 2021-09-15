@@ -68,4 +68,32 @@ namespace Self_StudyNavigator
     class Task17
     {
     }
+    
+    class TvSet : ISwitchable 
+    {
+        //Включение
+        void SwitchOn()
+        {
+            Console.WriteLie("Включить телевизор");
+        }
+    //Выключение
+        void SwitchOff()
+        {
+            Console.WriteLie("Включить телевизор");
+        }
+    }
+    
+    class LaptopSwitch : ISwitchable
+    {
+        //Включение
+        void SwitchOn()
+        {
+            Console.WriteLie("Включить ноутбук");
+        }
+        //Выключение
+        void SwitchOff()
+        {
+            Console.WriteLie("Включить ноутбук");
+        }
+    }
 }
