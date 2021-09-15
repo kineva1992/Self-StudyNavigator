@@ -10,11 +10,11 @@ namespace Self_StudyNavigator
   но мы можем создать список указателей на интерфейс IDrawable, и работать с такими объектами, как с однотипными (с одинаковым интерфейсом). 
   Этот пример с IDrawable более наглядно отображает то, что нам дают интерфейсы. На практике, IGeometrical стоило бы заменить на абстрактный класс.
   */
- interface ISwitchable
-  {
-    //Включение
-    void SwitchOn();
-    //Выключение
-    void SwitchOff();
-  }
+    public interface ISwitchable
+      {
+            //Включение
+            public void SwitchOn();
+            //Выключение
+            public void SwitchOff();
+      }
 }

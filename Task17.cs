@@ -16,10 +16,10 @@ namespace Self_StudyNavigator
     
     abstract class Man
     {
-         string Name{get; set;}
-         string Hello{get; set;}
+       protected  string Name{get; set;}
+       protected string Hello{get; set;}
         
-         abstract void SayHello();
+         public abstract void SayHello();
     }
     
     class Russian : Man
@@ -30,7 +30,7 @@ namespace Self_StudyNavigator
             Hello = hello;
         }
         
-         override void SayHello()
+        public override void SayHello()
         {
             Console.WriteLine("One {0} said {1} ", Name, Hello);
         }
@@ -43,22 +43,22 @@ namespace Self_StudyNavigator
             Name = "Ukrainian";
             Hello = hello;
         }
-        
-        override void SayHello()
+
+        public override void SayHello()
         {
-            Console.WriteLine("One {0} said {1}"Name, Hello);
+            Console.WriteLine("One {0} said {1}",Name, Hello);
         }
     }
     
     class American : Man
     {
-        Ukrainian(string name, string hello)
+        American(string name, string hello)
         {
             Name = "Ukrainian";
             Hello = hello;
         }
-        
-        override void SayHello()
+
+        public override void SayHello()
         {
             Console.WriteLine("One {0} said {1}", Name, Hello);
         }
@@ -69,31 +69,31 @@ namespace Self_StudyNavigator
     {
     }
     
-    class TvSwitch : ISwitchable 
+   public class TvSwitch : ISwitchable 
     {
         //Включение
-        void SwitchOn()
+        public void SwitchOn()
         {
-            Console.WriteLie("Включить телевизор");
+            Console.WriteLine("Включить телевизор");
         }
-    //Выключение
-        void SwitchOff()
+        //Выключение
+        public void SwitchOff()
         {
-            Console.WriteLie("Включить телевизор");
+            Console.WriteLine("Включить телевизор");
         }
     }
     
-    class LaptopSwitch : ISwitchable
+   public class LaptopSwitch : ISwitchable
     {
         //Включение
-        void SwitchOn()
+        public void SwitchOn()
         {
-            Console.WriteLie("Включить ноутбук");
+            Console.WriteLine("Включить ноутбук");
         }
         //Выключение
-        void SwitchOff()
+        public void SwitchOff()
         {
-            Console.WriteLie("Включить ноутбук");
+            Console.WriteLine("Включить ноутбук");
         }
     }
     
