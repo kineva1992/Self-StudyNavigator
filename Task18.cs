@@ -141,5 +141,11 @@ namespace Self_StudyNavigator
             else 
                 Console.WriteLine(them.Substring(0, 30));
         }
+        
+        public void TrimSpaceWitchText(string textWitchSpace)
+        {
+           textWitchSpace = Regex.Replace(textWitchSpace, @"\s+", " ");
+           Console.WriteLine(textWitchSpace);
+        }
     }
 }
