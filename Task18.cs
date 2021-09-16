@@ -110,4 +110,36 @@ namespace Self_StudyNavigator
     Скомпилируться и выведиться на консоль слово Ford, потому что мы ссылаемся в переменной student на student.Name а в нём храниться ссылка на слово Fodr.
 
      */
+     
+    /*
+    Напишите код, в котором:
+    Сформируйте и выведите в консоль сообщение о
+    сдаче аттестации: «Слушатель <ФИО> сдал
+    аттестацию на <N> баллов».
+    ФИО слушателя задайте в строковой переменной,
+    результат аттестации в переменной типа double.
+    Итоговое сообщение сформируйте с помощью
+    метода String.Format, аттестационный балл при
+    этом округлите до одного знака после запятой.
+    */
+    
+    class Task18
+    {
+        public static void ResultBall(string name, double resultBall)
+        {
+            resultBall = String.Format("{0:f4}",resultBall);
+            Console.WriteLine("Слушатель {0} сдал экзамен аттестацию на {1} баллов", name, resultBall);
+        }
+        
+        public static void ThemMessage(string them)
+        {
+            if(them.Length > 30)
+            {
+                Console.WriteLine(them.Substring(0, 30));
+            }
+            
+            else 
+                Console.WriteLine(them.Substring(0, 30));
+        }
+    }
 }
