@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Self_StudyNavigator
 {
@@ -115,58 +116,7 @@ namespace Self_StudyNavigator
     
     class Task18
     {
-            /*
-            Напишите код, в котором:
-            Сформируйте и выведите в консоль сообщение о
-            сдаче аттестации: «Слушатель <ФИО> сдал
-            аттестацию на <N> баллов».
-            ФИО слушателя задайте в строковой переменной,
-            результат аттестации в переменной типа double.
-            Итоговое сообщение сформируйте с помощью
-            метода String.Format, аттестационный балл при
-            этом округлите до одного знака после запятой.
-            */
-        public static void ResultBall(string name, double resultBall)
-        {
-            resultBall = String.Format("{0:f4}",resultBall);
-            Console.WriteLine("Слушатель {0} сдал экзамен аттестацию на {1} баллов", name, resultBall);
-        }
-        /*Напишите код, в котором:
-        1. Запросите пользователя ввести текст сообщения
-        2. Сформируйте тему сообщения, которая должны
-        содержать слово «Тема: » и первые 30 символов
-        из текста.
-        Учтите, что введенный пользователем текст
-        сообщения может быть менее 30 символов
-        3. Выведите тему в консоль.*/
-        public static void ThemMessage(string them)
-        {
-            if(them.Length > 30)
-            {
-                Console.WriteLine(them.Substring(0, 30));
-            }
             
-            else 
-                Console.WriteLine(them.Substring(0, 30));
-        }
-        /*Напишите код, которые будет удалять лишние
-        (двойные, тройные и т.п.) пробелы между словами
-        в строке, запрашиваемой у пользователя.
-        Результат выводите в консоль. Пример строки:
-        «Этот текст содержит лишние пробелы».*/
-        public void TrimSpaceWitchText(string textWitchSpace)
-        {
-           textWitchSpace = Regex.Replace(textWitchSpace, @"\s+", " ");
-           Console.WriteLine(textWitchSpace);
-        }
-        
-        //Напишите код, который будет находить и выводить консоль предпоследнее слово в строке
-        public void ViewLastElementSting(string inputText)
-        {
-            string[] text1 = inputText.Split(' ');
-            string lastElement = text1[text1.Length - 1];
-            Console.WriteLine(lastElement);
-        }
     }
     /*
     Контрольные вопросы
