@@ -104,38 +104,41 @@ namespace Self_StudyNavigator
             //Console.WriteLine($"Truck with capacity {truck.Capacity}");
             //Console.ReadKey();
 
-            List<GeometryFigure> FigureList = new List<GeometryFigure>();
-            FigureList.Add(new Triangle());
-            FigureList.Add(new Triangle());
-            FigureList.Add(new Triangle());
-            FigureList.Add(new Triangle());
-            FigureList.Add(new Cirkle());
-            FigureList.Add(new Cirkle());
-            FigureList.Add(new Cirkle());
-            FigureList.Add(new Cirkle());
-            FigureList.Add(new Cirkle());
-            for (int i = 0; i < FigureList.Count; i++) 
-            {
-                
-                int countTriangle = 1;
-                int coutCirkle = 1;
-                if (FigureList[i] is Triangle)
-                {
-                    countTriangle += i;
-                    Console.WriteLine("Trangle входит в соста базового класса {0} раз", countTriangle);
-                }
-                else 
-                {
-                    coutCirkle += i;
-                    Console.WriteLine("Cirkle входит в соста базового класса {0} раз", coutCirkle);
-                }
-                
-                
-            }
+            //List<GeometryFigure> FigureList = new List<GeometryFigure>();
+            //FigureList.Add(new Triangle());
+            //FigureList.Add(new Triangle());
+            //FigureList.Add(new Triangle());
+            //FigureList.Add(new Triangle());
+            //FigureList.Add(new Cirkle());
+            //FigureList.Add(new Cirkle());
+            //FigureList.Add(new Cirkle());
+            //FigureList.Add(new Cirkle());
+            //FigureList.Add(new Cirkle());
+            //for (int i = 0; i < FigureList.Count; i++) 
+            //{
+
+            //    int countTriangle = 1;
+            //    int coutCirkle = 1;
+            //    if (FigureList[i] is Triangle)
+            //    {
+            //        countTriangle += i;
+            //        Console.WriteLine("Trangle входит в соста базового класса {0} раз", countTriangle);
+            //    }
+            //    else 
+            //    {
+            //        coutCirkle += i;
+            //        Console.WriteLine("Cirkle входит в соста базового класса {0} раз", coutCirkle);
+            //    }
 
 
-            Manager task16 = new Manager();
-            Console.WriteLine(task16.GetSumOfTheMount(100, 168, 0.7));
+            //}
+
+
+            //Manager task16 = new Manager();
+            //Console.WriteLine(task16.GetSumOfTheMount(100, 168, 0.7));
+
+            Task20 task20 = new Task20();
+            task20.ReturnDataTimeTryParse();
 
 
         }
