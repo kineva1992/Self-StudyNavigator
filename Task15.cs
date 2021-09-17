@@ -162,12 +162,12 @@ namespace Self_StudyNavigator
                 if (FigureList[i] is Triangle)
                 {
                     countTriangle += i;
-                    Console.WriteLine("Trangle входит в соста базового класса {0} раз", countTriangle);
+                    Console.WriteLine("Trangle входит в соста базового класса в {0} строке", countTriangle);
                 }
                 else
                 {
                     coutCirkle += i;
-                    Console.WriteLine("Cirkle входит в соста базового класса {0} раз", coutCirkle);
+                    Console.WriteLine("Cirkle входит в соста базового класса в {0} строке", coutCirkle);
                 }
             }
         }
