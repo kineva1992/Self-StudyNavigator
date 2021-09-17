@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,7 +7,7 @@ namespace Self_StudyNavigator
 {
     class Task21
     {
-        public void ExeptionTask(int inputOne, int inputTwo )
+        public void ExeptionTask(int inputOne, int inputTwo, IEnumerable ts )
         {
             int[] arrayExeptionTask = new int[10] { 5, 88, 1, 12, 4557, 14, 741, 46, 985, 8 };
 

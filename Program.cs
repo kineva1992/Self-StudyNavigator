@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Self_StudyNavigator
 {
@@ -137,9 +138,22 @@ namespace Self_StudyNavigator
             //Manager task16 = new Manager();
             //Console.WriteLine(task16.GetSumOfTheMount(100, 168, 0.7));
 
-            Task20 task20 = new Task20();
-            task20.ReturnDataTimeTryParse();
+            //Task21 task21 = new Task21();
+            //int[] arrayExeptionTask = new int[10] { 5, 88, 1, 12, 4557, 14, 741, 46, 985, 8 };
+            //task21.ExeptionTask(1,2, arrayExeptionTask);
 
+            List<string> cities = new List<string>()
+            {"Москва", "Саратов", "Кострома",
+            "Сургут", "Иркутск", "Сочи" };
+
+            //var selectedTeams = from t in teams // определяем каждый объект из teams как t
+            //                    where t.ToUpper().StartsWith("Б") //фильтрация по критерию
+            //                    orderby t  // упорядочиваем по возрастанию
+            //                    select t; // выбираем объект
+            var selectedCities = cities.Take(3);
+
+            foreach (string s in selectedCities)
+                Console.WriteLine(s);
 
         }
 
