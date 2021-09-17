@@ -142,21 +142,17 @@ namespace Self_StudyNavigator
             //int[] arrayExeptionTask = new int[10] { 5, 88, 1, 12, 4557, 14, 741, 46, 985, 8 };
             //task21.ExeptionTask(1,2, arrayExeptionTask);
 
-            List<string> cities = new List<string>()
-            {"Москва", "Саратов", "Кострома",
-            "Сургут", "Иркутск", "Сочи" };
-
-            //var selectedTeams = from t in teams // определяем каждый объект из teams как t
-            //                    where t.ToUpper().StartsWith("Б") //фильтрация по критерию
-            //                    orderby t  // упорядочиваем по возрастанию
-            //                    select t; // выбираем объект
-            var selectedCities = cities.Take(3);
-
-            foreach (string s in selectedCities)
-                Console.WriteLine(s);
-
         }
-
+      public class User
+        {
+            public string Name { get; set; }
+            public int Age { get; set; }
+            public List<string> Languages { get; set; }
+            public User()
+            {
+                Languages = new List<string>();
+            }
+        }
         static void ChangePerson(Persons persons)
         {
             //Сработает
